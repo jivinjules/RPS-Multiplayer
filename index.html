@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rock Paper Scissors</title>
+
+    <meta charset="utf-8" />
+    <!--Viewport for media queries-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Linking CSS reset-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!--Linking CSS Stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Linking Googlefonts-->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Monoton" rel="stylesheet">
+    <!--Linking jquery-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <form>
+            <label for="name-input">Name:</label>
+            <input class="form-control" id="name-input" type="text">
+            <button>Start</button>
+
+        </form>
+    </header>
+    <div id=wrapper>
+        <div id="content">
+            <div id="player1-box">
+                <h2>Player 1</h2>
+                <br>
+                <br>
+                <div id="name-area1"><p>Waiting on player 1</p></div>
+                <br>
+                <div id="rock1"><h3>ROCK</h3></div>
+                <div id="paper1"><h3>PAPER</h3></div>
+                <div id="scissors1"><h3>SCISSORS</h3></div>
+                <br>
+                <br>
+                <div id="win-count1"><p>Wins: </p></div>
+                <div id="lose-count1"><p>Losses: </p></div>
+                <div id="tie-count1"><p>Ties: </p></div>
+            </div>
+            <div id="image">
+                <img src="assets/images/rps-background.jpg">
+                <h2>Winner:</h2>
+                <h2 id="display-winner"></h2>
+            </div>
+
+            <div id="player2-box">
+                <h2>Player 2</h2>
+                <br>
+                <br>
+                <div id="name-area2"><p>Waiting on player 2</p></div>
+                <br>
+                <div id="rock2"><h3>ROCK</h3></div>
+                <div id="paper2"><h3>PAPER</h3></div>
+                <div id="scissors2"><h3>SCISSORS</h3></div>
+                <br>
+                <br>
+                <div id="win-count2"><p>Wins: </p></div>
+                <div id="lose-count2"><p>Losses: </p></div>
+                <div id="tie-count2"><p>Ties: </p></div>
+            </div>
+        </div>
+        <div id="chat-area">
+            <textarea>Want to chat? Enter a message here!</textarea>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+<footer id="sticky">
+    Julie Hodges &copy 2018
+</footer>
+
+</html>
